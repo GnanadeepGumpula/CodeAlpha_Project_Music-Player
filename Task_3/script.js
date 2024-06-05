@@ -1,4 +1,3 @@
-// Select all the elements in the HTML page
 let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
@@ -10,8 +9,6 @@ let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
-
-// Define the list of tracks
 
 let track_list = [
   {
@@ -27,13 +24,10 @@ let track_list = [
   }
 ];
 
-// Define the current track index
 let track_index = 0;
 
-// Define the playback status
 let isPlaying = false;
 
-// Create the audio element for the player
 let curr_track = document.createElement('audio');
 curr_track.src = track_list[track_index].url;
 curr_track.play();
@@ -48,7 +42,6 @@ playpause_btn.addEventListener("click", function() {
   }
 });
 
-// Implement seeking functionality
 seek_slider.addEventListener("input", function() {
   let seek_time = curr_track.duration * (seek_slider.value / 100);
   curr_track.currentTime = seek_time;
