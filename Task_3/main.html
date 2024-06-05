@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <center>
+    <h1>Music Player</h1>
+  </center>
+    <center>
+      <Trac_1 style="padding: 10px;">
+        <div class="player" style="height: 100%; width: 100%; padding: 50px; margin: 10px;">
+          <div class="details">
+            <div class="now-playing" >Hits Of A.R.Rahman</div>
+            <div class="track-art"> <img src="/maxresdefault.jpg"  class="img" > </div>
+            <div class="track-name">Marvel Anthem</div>
+            <div class="track-artist">A.R.Rahman</div>
+          </div>
+
+          <div class="buttons">
+            <button class="prev-track">⏮️</button>
+            <button class="playpause-track">▶️⏸️</button>
+            <button class="next-track">⏭️</button>
+          </div>
+
+          <div class="sliders">
+            <div class="current-time">0:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" >
+            <div class="total-duration">0:00</div>
+          </div>
+
+          <div class="sliders">
+            <details>    
+              <summary></summary>
+              <input type="range" min="1" max="100" value="100" class="volume_slider" >
+            </details>
+          </div>
+
+        </div>
+      </Trac_1>
+    </center>
+  
+  <script src="script.js"></script>
+</body>
+</html>
