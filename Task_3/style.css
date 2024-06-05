@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: auto;
@@ -12,7 +11,7 @@ body {
     padding: 10px;  
   }
 
- /*Details Styles*/
+
   details > summary {
     list-style-type: '🔊';
 }
@@ -31,7 +30,7 @@ details[open] > summary {
     margin-bottom: 0.5rem;
 }
  
-  /* Player Styles */
+
   .player {
     width: 300px;
     height: 400px;
@@ -45,7 +44,7 @@ details[open] > summary {
     justify-content: center;
   }
   
-  /* Details Styles */
+
   .details {
     display: flex;
     flex-direction: column;
@@ -81,8 +80,7 @@ details[open] > summary {
     color: #666;
     padding: 5px;
   }
-  
-  /* Buttons Styles */
+
   .buttons {
     display: flex;
     justify-content: space-between;
@@ -118,7 +116,7 @@ details[open] > summary {
     cursor: pointer;
   }
   
-  /* Sliders Styles */
+
   .sliders {
     display: flex;
     justify-content: space-between;
@@ -157,7 +155,6 @@ details[open] > summary {
     background-color: #fff;
   }
   
-  /* Time Styles */
   .time {
     display: flex;
     justify-content: space-between;
@@ -169,7 +166,6 @@ details[open] > summary {
     color: #666;
   }
   
-  /* Audio Styles */
   audio {
     display: none;
   }
